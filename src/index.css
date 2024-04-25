@@ -4,12 +4,19 @@
   
 }
 .wrapper {
-  padding: 50px;
+  padding: 50px 0;
   display: flex;
   gap: 30px;
+  width: 100%;
 } 
 
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .bestt {
+  width: 100%;
   padding: 50px 0;
 }
 
@@ -125,21 +132,22 @@
     }
     
     
-    .home{
+    /* .home{
       padding-bottom: 10px;
       border-bottom: 4px solid #DB4444;
-    }
+    } */
     .menu{
       display: flex;
       gap: 20px;
       align-items: center;
       list-style: none;
       margin-right: 30px;
+
     }
-    .menu a:hover{
+    /* .menu a:hover{
       padding-bottom: 10px;
       border-bottom: 4px solid #DB4444;
-    }
+    } */
     .search{
       display: flex;
       background-color: #F5F5F5;
@@ -162,7 +170,7 @@
     .section1{
       display: flex;
       justify-content: space-between;
-      width: 80%;
+      width: 100%;
       margin: auto;
       margin-bottom: 120px;
     }
@@ -195,7 +203,7 @@
     }
     .womenfashion a:hover,
     .menfashion a:hover{
-      color: #DB4444;
+      /* color: #DB4444; */
     }
     .womendropdown li, .mendropdown li {
       display: flex;
@@ -451,7 +459,7 @@
       display: none;
     }
     .AddToCart a{
-      width: 285px;
+      width: 250px;
       background-color: #000;
       text-align: center;
       border: none;
@@ -598,7 +606,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 80%;
+      width: 100%;
       margin: auto;
       height: 500px;
       color: #fff;
@@ -820,7 +828,12 @@
     }
 
     .productpicture  img{ 
-      width: 100%;
+      width:150px;
+      padding-right: 20px;
       height: 210px;
       object-fit: cover;
+    }
+
+    .cart__wrapper {
+      width: 100%;
     }

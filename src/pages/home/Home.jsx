@@ -42,7 +42,6 @@ export const Home = () => {
     <div key={el.id} className="product3 1">
             <div className="allpictureproduct">
               <div className="images-product">
-                <div className="price-off new"></div>
                 <div className="productpicture">
                 <img src={el.images[0]} alt="" /> 
 
@@ -127,7 +126,7 @@ let produc = data?.map((el) => (
 </div>
 ));
   return (
-    <div>
+    <div className="container">
       <div className="section1">
         <div className="sidebar">
           <ul className="balck-list">

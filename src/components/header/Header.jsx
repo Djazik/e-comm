@@ -37,7 +37,7 @@ export const Header = () => {
 
 
 
-<header>
+<header className="container">
                 
 
             <div className="top-header">
@@ -69,9 +69,7 @@ export const Header = () => {
                       <img src={icon} alt="" />
                 </div>
                 <div className="wish-card">
-                    {/* <a href="./Wishlist.html"><img src="./img/wishlist.svg"></a>          
-                    <a href="./cart.html"><img src="./img/cart.svg"></a>
-                <a href="./Account.html"><img src="./img/user.png"></a> */}
+                
                  <NavLink to={"/wishlist"}>  <img src={wishlist} alt="" />  </NavLink>
                  <NavLink to={"/cart"}>  <img src={cart} alt="" />  </NavLink>
                   <NavLink> <img src={user} alt="" /> </NavLink>

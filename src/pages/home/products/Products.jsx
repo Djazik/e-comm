@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleToWishes } from "../../../context/wishlistSlice";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
+import { addToCart } from "../../../context/cartSlice";
 import rass1 from "../../../assets/Fill-Eye.png"
 
 
@@ -14,9 +15,9 @@ export const Products = ({ data, title }) => {
             <div className="product1">
               <div className="allpictureproduct">
                 <div className="images-product">
-                  <div className="price-off">
+                  {/* <div className="price-off">
                     <p>-40%</p>
-                  </div>
+                  </div> */}
                   <div className="productpicture">
       <img src={el.images[0]} alt="" /> 
 
@@ -37,7 +38,7 @@ export const Products = ({ data, title }) => {
                   </div>
                 </div>
                 <div  className="AddToCart">
-                  <a href="#">Add To Cart</a>
+                  <a  onClick={()=> dispatch(addToCart(el))}>Add To Cart</a>
                 </div>
               </div>
 

@@ -10,7 +10,7 @@ import rasm8 from "../../assets/icon-copyright.png"
 
 export const Footer = () => {
   return (
-    <div>
+    <div className="container">
        <footer>
         <div className="footer-information">
 
